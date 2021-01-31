@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/songsListLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="1"
+        app:layout_constraintBottom_toTopOf="@+id/songNameLinearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/songsListView"
+            android:layout_width="0dp"
+            android:layout_height="420dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/songNameLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="5dp"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@id/songsListLinearLayout"
+        app:layout_constraintBottom_toTopOf="@id/progressLinearLayout"
+        tools:layout_editor_absoluteX="0dp"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:layout_weight="0.9"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Choose song">
+        </TextView>
+        <CheckBox
+            android:id="@+id/song_random_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/progressLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@id/songNameLinearLayout"
+        app:layout_constraintBottom_toTopOf="@id/actionLinearLayout"
+        tools:layout_editor_absoluteX="0dp"
+        android:baselineAligned="false">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/actionLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/progressLinearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:baselineAligned="false">
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="previous"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="play"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="next"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

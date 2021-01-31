@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dmytro.laskuryk.lab_4.MainActivity">
+
+    <item
+        android:id="@+id/create_note_action"
+        android:orderInCategory="1"
+        android:title="@string/create"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/change_locale_action"
+        android:orderInCategory="2"
+        android:title="EN / UA"
+        app:showAsAction="never" />
+</menu>

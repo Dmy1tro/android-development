@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лаб №4</string>
+    <string name="create">Створити</string>
+    <string name="form_not_valid">Форма невалідна</string>
+    <string name="created_successfully">Успішно створено!</string>
+    <string name="saved_successfully">Успішно збережено!</string>
+    <string name="note_info">Інформація про нотатку:</string>
+    <string name="note_action_title">Дія</string>
+    <string name="note_action">Виберіть дію для \'$\':</string>
+    <string name="update">Редагувати</string>
+    <string name="delete">Видалити</string>
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
+    <string name="confirm_delete">Ви впевнені, що хочете видалити \'$\'?</string>
+    <string name="back">Назад</string>
+    <string name="creation_date">Дата створення:</string>
+    <string name="appointment_date">Дата призначення:</string>
+    <string name="all">Усі</string>
+    <string name="low">Низька</string>
+    <string name="medium">Середня</string>
+    <string name="high">Висока</string>
+    <!-- Create fragment -->
+    <string name="create_fragment_title">Створення</string>
+    <string name="create_fragment_name">Назва:</string>
+    <string name="create_fragment_description">Опис:</string>
+    <string name="create_fragment_importance">Важливість:</string>
+    <string name="create_fragment_image">Картинка:</string>
+    <string name="create_fragment_chooseBtn">Вибрати</string>
+    <string name="create_fragment_clearBtn">Очистити</string>
+    <string name="create_fragment_backBtn">Назад</string>
+    <string name="create_fragment_createBtn">Створити</string>
+
+    <!-- Update fragment -->
+    <string name="update_fragment_title">Редагування</string>
+    <string name="update_fragment_name">Назва:</string>
+    <string name="update_fragment_description">Опис:</string>
+    <string name="update_fragment_importance">Важливість:</string>
+    <string name="update_fragment_image">Картинка:</string>
+    <string name="update_fragment_chooseBtn">Вибрати</string>
+    <string name="update_fragment_clearBtn">Очистити</string>
+    <string name="update_fragment_backBtn">Назад</string>
+    <string name="update_fragment_saveBtn">Зберегти</string>
+    <string name="update_fragment_resetBtn">Скинути</string>
+    <string name="update_fragment_date">Дата:</string>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UpdateNoteFragment">
+
+        <LinearLayout
+            android:id="@+id/titleLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/update_fragment_title"
+                android:textColor="#000"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nameLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/titleLinearLayout">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|start"
+                android:text="@string/update_fragment_name"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameInputEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:ems="50"
+                android:inputType="text"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/descriptionLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/nameLinearLayout">
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|start"
+                android:text="@string/update_fragment_description"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/descriptionInputEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:ems="50"
+                android:inputType="text"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/importanceLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/descriptionLinearLayout">
+
+            <TextView
+                android:id="@+id/importanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|start"
+                android:text="@string/update_fragment_importance"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/importanceSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:scrollbarSize="24sp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/appointmentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/importanceLinearLayout">
+
+            <TextView
+                android:id="@+id/appointmentTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|start"
+                android:text="@string/appointment_date"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/appointmentInputEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:ems="50"
+                android:hint="yyyy-MM-dd HH:mm"
+                android:inputType="date|time"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pickImageLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/appointmentLinearLayout">
+
+            <TextView
+                android:id="@+id/pickImageTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|start"
+                android:text="@string/update_fragment_image"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/pickImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.95"
+                android:text="@string/update_fragment_chooseBtn"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/clearImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.95"
+                android:text="@string/update_fragment_clearBtn"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/selectedImageLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="1"
+            app:layout_constraintTop_toBottomOf="@id/pickImageLinearLayout">
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/saveLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectedImageLinearLayout"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/update_fragment_backBtn"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/update_fragment_resetBtn"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/update_fragment_saveBtn"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

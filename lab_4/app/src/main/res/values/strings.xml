@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">lab 4</string>
+    <string name="create">Create</string>
+    <string name="form_not_valid">Form is not valid</string>
+    <string name="created_successfully">Created successfully!</string>
+    <string name="saved_successfully">Saved successfully!</string>
+    <string name="note_info">Note info:</string>
+    <string name="note_action_title">Action</string>
+    <string name="note_action">Choose action for task \'$\':</string>
+    <string name="update">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm_delete">Are you sure you want to delete \'$\'?</string>
+    <string name="back">Back</string>
+    <string name="creation_date">Creation date:</string>
+    <string name="appointment_date">Appointment date:</string>
+    <string name="all">All</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <!-- Create fragment -->
+    <string name="create_fragment_title">Create</string>
+    <string name="create_fragment_name">Name:</string>
+    <string name="create_fragment_description">Description:</string>
+    <string name="create_fragment_importance">Importance:</string>
+    <string name="create_fragment_image">Image:</string>
+    <string name="create_fragment_chooseBtn">Choose</string>
+    <string name="create_fragment_clearBtn">Clear</string>
+    <string name="create_fragment_backBtn">Back</string>
+    <string name="create_fragment_createBtn">Create</string>
+
+    <!-- Update fragment -->
+    <string name="update_fragment_title">Update</string>
+    <string name="update_fragment_name">Name:</string>
+    <string name="update_fragment_description">Description:</string>
+    <string name="update_fragment_importance">Importance:</string>
+    <string name="update_fragment_image">Image:</string>
+    <string name="update_fragment_chooseBtn">Choose</string>
+    <string name="update_fragment_clearBtn">Clear</string>
+    <string name="update_fragment_backBtn">Back</string>
+    <string name="update_fragment_saveBtn">Save</string>
+    <string name="update_fragment_resetBtn">Reset</string>
+    <string name="update_fragment_date">Date:</string>
+</resources>

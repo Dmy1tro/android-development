@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">pz1.dmytro.laskuryk.nure</string>
+    <string name="text_main">Hello, world</string>
+    <string name="button_main">Click me!</string>
+    <string name="checkBox_main">I\'m checkbox</string>
+
+    <string name="table_label">Main table</string>
+    <string name="first_row">First column</string>
+    <string name="first_row2">Second column</string>
+    <string name="second_row">Second row</string>
+    <string name="third_row">Third row</string>
+    <string name="fourth_row">Fourth row</string>
+</resources>

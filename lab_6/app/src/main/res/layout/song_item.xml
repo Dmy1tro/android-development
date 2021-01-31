@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/song_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9e9e9"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/song_name_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="1.7">
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:textColor="#000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:textColor="#000"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/song_duration_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/song_duration"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingBottom="5dp"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
